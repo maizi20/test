@@ -1,0 +1,8 @@
+<script>
+onload=s=>(s=new URL(location).searchParams).size>2&&(
+document.body.innerText=JSON.stringify(Object.fromEntries(
+  'age,studentOid,avatar,birthday,studentFullName,studentName,studentNum,level,titlePicture,infoCompleted,gender,hideGender,school,qq,xiguaStudentNo,host,bio,currentTitle,allTitles,province,city,addressCode,accountNumber,createdAt,updatedAt,approvedContent,approvedType,creationCount,followerCount,followingCount,likeCount,identityAuthRank,learnedProgrammingLanguages,hobbies,parents,virtualValue,reputationScore,informationModifyDate,identity,fullName,programmingCapability,currentParent'
+  .split(',').map((k,i)=>[k,s.get(i)])
+),void 0,2)
+)
+</script>
